@@ -28,6 +28,7 @@ Route::prefix('rfid')->group(function () {
 
 // 內循環
 Route::prefix('2b')->group(function () {
+    // 供應商
     Route::prefix('supplier')->group(function () {
         Route::get('/', ['', 'list']);
         Route::post('/', ['', 'create']);
@@ -38,6 +39,7 @@ Route::prefix('2b')->group(function () {
         });
     });
 
+    // 廠區
     Route::prefix('factories')->group(function () {
         Route::get('/', ['', 'list']);
         Route::post('/', ['', 'create']);
