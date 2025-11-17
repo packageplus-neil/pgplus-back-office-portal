@@ -5,25 +5,12 @@ namespace Utils;
 class ApiResponseHelper
 {
     protected $http_code = [
-        'OK' => '200',
-        'TEMPORARY_REDIRECT' => '307',
-        'BAD_REQUEST' => '400',
-        'INVALID_ARGUMENT' => '400',
-        'FAILED_PRECONDITION' => '400',
-        'OUT_OF_RANGE' => '400',
-        'UNAUTHENTICATED' => '401',
-        'PERMISSION_DENIED' => '403',
-        'NOT_FOUND' => '404',
-        'ABORTED' => '409',
-        'ALREADY_EXISTS' => '409',
-        'RESOURCE_EXHAUSTED' => '429',
-        'CANCELLED' => '499',
-        'DATA_LOSS' => '500',
-        'UNKNOWN' => '500',
-        'INTERNAL' => '500',
-        'NOT_IMPLEMENTED' => '501',
-        'UNAVAILABLE' => '503',
-        'DEADLINE_EXCEEDED' => '504',
+        'HTTP_OK' => '200',
+        'HTTP_BAD_REQUEST' => '400',
+        'HTTP_UNAUTHORIZED' => '401',
+        'HTTP_FORBIDDEN' => '403',
+        'HTTP_NOT_FOUND' => '404',
+        'HTTP_INTERNAL_SERVER_ERROR' => '500',
     ];
 
     public function paginator($status, $data)
